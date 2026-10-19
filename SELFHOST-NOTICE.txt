@@ -1,0 +1,21 @@
+Level 13 - self-hosted 30x edition
+
+Original game: Noora Routasuo and contributors
+Upstream: https://github.com/nroutasuo/level13
+Branch: gh-pages; game version 0.6.3
+Original license: Apache License 2.0 (see LICENSE).
+Original copyright and third-party notices remain in the distributed files.
+
+Modifications made on 2026-10-19:
+- GameConstants.js: default camp and exploration speed set to 30.
+- GameManager.js: loading/restarting preserves that configured default.
+- config.js: upstream error tracking disabled; modified asset version key.
+- index.html: identify this as a 30x edition; remove upstream analytics scripts.
+- README.md: add modified-edition overview before the original documentation.
+- Added GITHUB-DEPLOY.md and .nojekyll for branch-based GitHub Pages deployment.
+
+This is an independently modified build, not an official upstream release.
+Save data stays in each browser's localStorage; it is not synced by the server.
+Native speed settings apply to the systems that use those settings, including
+production/consumption, exploration cooldowns and action durations. They do not
+multiply every browser animation, audio track, autosave interval or combat clock.
